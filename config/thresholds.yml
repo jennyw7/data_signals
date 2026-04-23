@@ -1,0 +1,17 @@
+# Signal detection thresholds
+# Edit these values to tune sensitivity without touching SQL.
+# The notification scripts and dbt vars can read from this file.
+
+signals:
+  ctr_drop:
+    threshold: -0.10        # flag if CTR drops more than 10% week-over-week
+    lookback_weeks: 1
+
+  spend_spike:
+    threshold: 2.0          # flag if today's spend exceeds 2x the 7-day average
+    lookback_days: 7
+
+  # Template for adding new signals:
+  # my_new_signal:
+  #   threshold: <value>
+  #   lookback_days: <n>

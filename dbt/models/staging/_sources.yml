@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: stackadapt_reporting
+    database: ASBWZPT_STACKADAPT_REPORTING_STATS_REPORTING_SNOWFLAKE_SECURE_SHARE_1712671794978
+    schema: REPORTS
+    tables:
+      - name: REDSHIFT

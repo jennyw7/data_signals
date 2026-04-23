@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: mart_campaign_daily
+    description: "Campaign-level aggregation by day"
+    columns:
+      - name: campaign_id
+        tests:
+          - not_null
+      - name: event_date
+        tests:
+          - not_null
+      - name: impressions
+      - name: clicks
+      - name: spend
+      - name: ctr
+      - name: cpm

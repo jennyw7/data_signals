@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: mart_impression_summary
+    description: "Impression-level detail, enriched with campaign and audience metadata"
+    columns:
+      - name: impression_id
+        tests:
+          - unique
+          - not_null
+      - name: campaign_id
+        tests:
+          - not_null
+      - name: audience_id
+      - name: is_click
+      - name: cost
+      - name: event_date

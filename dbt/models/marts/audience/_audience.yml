@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: mart_audience_summary
+    description: "Audience-level aggregation across all campaigns"
+    columns:
+      - name: audience_id
+        tests:
+          - not_null
+      - name: event_date
+        tests:
+          - not_null
+      - name: impressions
+      - name: clicks
+      - name: spend
+      - name: ctr

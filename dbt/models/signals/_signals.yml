@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: sig_ctr_drop
+    description: >
+      Fires when a campaign's CTR drops more than 10% week-over-week.
+      Each row represents an active signal for the current week.
+    columns:
+      - name: campaign_id
+      - name: campaign_name
+      - name: week
+      - name: ctr
+      - name: prev_ctr
+      - name: pct_change
+      - name: signal_type
+
+  - name: sig_spend_spike
+    description: >
+      Fires when a campaign's daily spend exceeds 2x the 7-day average.
+      Each row represents an active signal for the current day.
+    columns:
+      - name: campaign_id
+      - name: campaign_name
+      - name: event_date
+      - name: spend
+      - name: avg_spend_7d
+      - name: spend_ratio
+      - name: signal_type

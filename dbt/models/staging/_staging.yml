@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_impressions
+    description: "Cleaned impression-level data from raw source"
+    columns:
+      - name: impression_id
+        tests:
+          - unique
+          - not_null
+      - name: campaign_id
+        tests:
+          - not_null
+      - name: audience_id
+      - name: is_click
+      - name: cost
+      - name: event_date
+        tests:
+          - not_null
+
+  - name: stg_campaigns
+    description: "Cleaned campaign metadata"
+    columns:
+      - name: campaign_id
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_audiences
+    description: "Cleaned audience segment metadata"
+    columns:
+      - name: audience_id
+        tests:
+          - unique
+          - not_null
