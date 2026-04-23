@@ -25,6 +25,8 @@ models:
         tests:
           - unique
           - not_null
+      - name: campaign_name
+      - name: advertiser_id
 
   - name: stg_audiences
     description: "Cleaned audience segment metadata"
@@ -33,3 +35,5 @@ models:
         tests:
           - unique
           - not_null
+      - name: audience_name
+      - name: segment_type
