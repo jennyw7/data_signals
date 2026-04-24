@@ -3,9 +3,10 @@ data_signals:
   outputs:
     dev:
       type: snowflake
-      account: YOUR_ACCOUNT        # e.g. xy12345.us-east-1
+      account: asbwzpt-stackadapt_pa        # e.g. xy12345.us-east-1
       user: YOUR_USER
       password: YOUR_PASSWORD      # or use authenticator: externalbrowser for SSO
+      # authenticator: externalbrowser 
       role: YOUR_ROLE
       database: YOUR_DATABASE
       warehouse: YOUR_WAREHOUSE
