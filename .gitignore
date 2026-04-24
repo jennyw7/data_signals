@@ -2,6 +2,7 @@
 dbt/target/
 dbt/dbt_packages/
 dbt/logs/
+logs/
 
 # credentials — never commit real secrets
 config/.env
